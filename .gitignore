@@ -1,0 +1,23 @@
+# Frontend (Vite + React)
+/client/node_modules
+/client/dist
+/client/.env
+/client/.env.*
+/client/*.log
+
+# Backend (Node.js)
+/server/node_modules
+/server/.env
+/server/.env.*
+/server/*.log
+
+# General
+.DS_Store
+.idea
+.vscode
+*.tmp
+*.bak
+
+# Optional (if applicable)
+.env                # Root-level env files
+*.local             # Local config files
