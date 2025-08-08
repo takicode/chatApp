@@ -18,8 +18,8 @@ const GroupChat = () => {
       console.error("Username is not available, cannot establish WebSocket connection.");
       return;
     }
-
-    ws.current = new WebSocket(`ws://localhost:3000?userName=${encodeURIComponent(username)}`)
+    const baseUrl = import.meta.env.VITE_WS_URL;
+    ws.current = new WebSocket(`${baseUrl}?userName=${encodeURIComponent(username)}`);
     
     ws.current.onopen=()=>{
       toast.success(`connected as ${username}`)

@@ -3,7 +3,10 @@ const { WebSocketServer } = require('ws')
 const uuidv4 = require('uuid').v4
 const url = require('url')
 
-const server = http.createServer()
+const server = http.createServer((req,res)=>{
+  res.writeHead(200);
+  res.end("WebSocket server is running");
+})
 const ws = new WebSocketServer({ server })
 
 const connections = {}
