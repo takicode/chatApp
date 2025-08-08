@@ -1,7 +1,13 @@
 {
+  "name": "chatapp-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
     "uuid": "^11.1.0",
-    "ws": "^8.18.3",
-    "start": "node index.js"
+    "ws": "^8.18.3"
   }
 }
